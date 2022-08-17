@@ -2,6 +2,8 @@ import React from 'react'
 import { BaseColaboradores } from './BaseColaboradores';
 import { useState} from 'react'
 import CollaboratorsReview from './CollaboratorsReview';
+import './AddCollaborators.css'
+
 
 const AddCollaborators = () => {
     const [collaborator, setCollaborator] = useState("[]")
@@ -23,12 +25,12 @@ const AddCollaborators = () => {
     <div className="add-collaborators">
         <form onSubmit={sendForm}>
         <div className="add-collaborators-container">
-            <label> Collaborator's Name </label>
+            <label className="collaborator-name"> Collaborator's Name </label>
             <div className="input-name">
                 <input type="text" placeholder="Enter Collaborator's Name" onChange={(e) => setCollaborator (e.target.value)} />
             </div>
-            <label> Collaborator's Email </label>
-            <div className="input-name">
+            <label className="collaborator-email"> Collaborator's Email </label>
+            <div className="input-mail">
                 <input type="text" placeholder="Enter Collaborator's email" onChange={(e) => setCollaboratorEmail (e.target.value)} />
             </div>
             <div className="button">
