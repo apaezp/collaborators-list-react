@@ -3,6 +3,8 @@ import { BaseColaboradores } from "./BaseColaboradores";
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import profile from "./assets/img/profile.jpeg";
+import "./SearchCard.css";
 
 const SearchCard = () => {
   const [search, setSearch] = useState("");
@@ -12,13 +14,23 @@ const SearchCard = () => {
   const handleClose = () => setShow(false);
   const handleSearch = (e) => {
     e.preventDefault();
-    handleShow();
-    setSearchResults(
-      BaseColaboradores.filter((collaborator) =>
-        collaborator.nombre.toLowerCase().includes(search.toLowerCase())
-      )
-    );
+    handleShow();         
+   
+    
+    if (search === "") {
+    alert("Please enter a name");
+    handleClose();    
+  } else if (search.length === 0) {
+     alert("No results found");
+    handleClose();
+  } else {
+     setSearchResults(BaseColaboradores.filter((collaborator) =>
+        collaborator.nombre.toLowerCase().includes(search.toLowerCase())));       
+  }; 
+    setSearch("")
   };
+  
+
 
   return (
     <>
@@ -39,9 +51,10 @@ const SearchCard = () => {
       {searchResults.map((collaborator) => (
         <Modal show={show} key={collaborator.id} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{collaborator.nombre}</Modal.Title>
+          <img src={profile} alt="profilepic" className="img-fluid"/>
+            <Modal.Title className="collaborator-name-modal">{collaborator.nombre}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{collaborator.correo}</Modal.Body>
+          <Modal.Body className="collaborator-email-modal">{collaborator.correo}</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close

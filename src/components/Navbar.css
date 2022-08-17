@@ -28,10 +28,11 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Aboreto', cursive;
 }
 
 
-.search input {
+.search {
     float: left;
     padding: 6px;
     border: none;
@@ -39,28 +40,10 @@ body {
     margin-right: 10px;
     font-size: 17px;
     border-radius: 3px;
+    font-family: 'Aboreto', cursive;
    
    
 }
 
-.btn {
-    
-    display: block;
-    color: rgb(242, 241, 241);
-    text-align: center;
-    padding: 6px 8px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 3px;
-    margin-top: 18px;    
-    background-color: #e0dede;
-    border: none;
-    cursor: pointer;
-}
-.fa-solid {
-    color: rgb(19, 18, 18);
-   
-    
-    
-    
-}
+
+

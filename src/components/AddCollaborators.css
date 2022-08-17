@@ -4,8 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    background-color: #f5f5f5;
+    height: 100%;    
     padding: 20px;
 }
 
@@ -13,9 +12,26 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'Aboreto', cursive;
 }
 
 .collaborator-email {
+    font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-family: 'Aboreto', cursive;
+}
+
+.btn { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

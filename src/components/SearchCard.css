@@ -1,0 +1,26 @@
+.fa-solid {
+    color: rgb(19, 18, 18);
+    
+    
+    
+}
+
+
+
+.collaborator-name-modal {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Aboreto', cursive;
+}
+
+.collaborator-email-modal {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Aboreto', cursive;
+}
