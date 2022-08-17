@@ -20,20 +20,20 @@ body {
     width: 100%;
 }
   
-.nav-title {
-    float: left;
-    display: block;
+.collaborators-list-nav {
+    display: flex;
+    flex-direction: row;    
     color: rgb(242, 241, 241);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
     font-family: 'Aboreto', cursive;
 }
 
 
 .search {
-    float: left;
+    
     padding: 6px;
     border: none;
     margin-top: 18px;

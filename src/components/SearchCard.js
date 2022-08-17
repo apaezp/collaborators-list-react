@@ -16,17 +16,23 @@ const SearchCard = () => {
     e.preventDefault();
     handleShow();         
    
-    
+  const filteredResults = BaseColaboradores.filter((collaborator) => 
+    collaborator.nombre.toLowerCase().includes(search.toLowerCase())
+  );
+
     if (search === "") {
     alert("Please enter a name");
-    handleClose();    
-  } else if (search.length === 0) {
-     alert("No results found");
     handleClose();
+    return;    
+  } else if (filteredResults.length === 0) {
+    alert("No results found");
+    handleClose();
+    return;
   } else {
-     setSearchResults(BaseColaboradores.filter((collaborator) =>
-        collaborator.nombre.toLowerCase().includes(search.toLowerCase())));       
-  }; 
+    setSearchResults(filteredResults);
+    
+   }             
+  
     setSearch("")
   };
   
