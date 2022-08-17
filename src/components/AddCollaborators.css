@@ -13,18 +13,20 @@
     font-weight: bold;
     margin-bottom: 10px;
     font-family: 'Aboreto', cursive;
+    text-decoration: underline;
 }
 
 .collaborator-email {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: 'Aboreto', cursive;
+    text-decoration: underline;
 }
 
 .btn { 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
@@ -34,4 +36,5 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+   
 }

@@ -47,13 +47,14 @@ const SearchCard = () => {
             placeholder="Search..."
             onChange={(e) => setSearch(e.target.value)}
           />
-        </div>
-        <div className="button">
           <button onClick={handleSearch}>
             {" "}
             <i className="fa-solid fa-magnifying-glass"></i>{" "}
           </button>
         </div>
+        
+          
+        
       {searchResults.map((collaborator) => (
         <Modal show={show} key={collaborator.id} onHide={handleClose}>
           <Modal.Header closeButton>

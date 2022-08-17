@@ -37,7 +37,7 @@ const AddCollaborators = () => {
             <div className="input-mail">
               <input
                 type="text"
-                placeholder="Enter Collaborator's email"
+                placeholder="Enter Collaborator's Email"
                 onChange={(e) => setCollaboratorEmail(e.target.value)}
               />
             </div>
