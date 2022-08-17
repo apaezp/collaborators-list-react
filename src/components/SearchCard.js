@@ -59,9 +59,13 @@ const SearchCard = () => {
         <Modal show={show} key={collaborator.id} onHide={handleClose}>
           <Modal.Header closeButton>
           <img src={profile} alt="profilepic" className="img-fluid"/>
-            <Modal.Title className="collaborator-name-modal">{collaborator.nombre}</Modal.Title>
+            <Modal.Title className="collaborator-modal-title">
+              </Modal.Title>
           </Modal.Header>
-          <Modal.Body className="collaborator-email-modal">{collaborator.correo}</Modal.Body>
+          <Modal.Body className="collaborator-modal-body">
+            <h2 className="collaborator-modal-name"> {collaborator.nombre} </h2>
+            <p className="collaborator-modal-email"> {collaborator.correo} </p>            
+            </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close

@@ -3,20 +3,18 @@
         
 }
 
-
-
-.collaborator-name-modal {
+.collaborator-modal-name {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     font-family: 'Aboreto', cursive;
 }
 
-.collaborator-email-modal {
+.collaborator-modal-email {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
